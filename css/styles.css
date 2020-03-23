@@ -413,3 +413,13 @@ nav h1 a {
 #restaurant-hours td {
     color: #666;
 }
+
+
+/* Responsive */
+
+@media only screen and (min-width: 600px) {
+    /* large mobiles and tablets */
+    nav h1 a {
+        font-size: 17pt;
+    }
+}
