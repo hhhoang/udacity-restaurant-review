@@ -237,7 +237,7 @@ nav h1 a {
     background-color: #ccc;
     display: block;
     margin: 0;
-    max-height: 248px;
+    height: auto;
     width: 100%;
 }
 
@@ -313,6 +313,7 @@ nav h1 a {
 
 #restaurant-img {
     width: 100%;
+    height: auto;
     border-radius: 25px 0px 0px;
 }
 
@@ -341,6 +342,10 @@ nav h1 a {
     border-top: 1px solid #fff;
     padding: 140px 40px 30px;
     width: 100%;
+}
+
+#reviews-container {
+    padding: 50px 40px 30px;
 }
 
 #reviews-container h2 {
@@ -405,7 +410,6 @@ nav h1 a {
     color: #fff;
     font-size: 10pt;
     padding: 5px 10px 5px;
-    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
 }
