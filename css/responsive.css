@@ -1,0 +1,17 @@
+/* reponsive for larger than mobile devices
+*/
+
+@media only screen and (min-width: 600px) {
+    /* large mobiles and tablets */
+    #restaurants-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    nav h1 a {
+        font-size: 15pt;
+        letter-spacing: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* large devices and desktop */
+}
