@@ -81,14 +81,17 @@ fetchRestaurantFromURL = (callback) => {
  */
 fillRestaurantHTML = (restaurant = self.restaurant) => {
     const name = document.getElementById('restaurant-name');
+    name.tabIndex = 0; // accessibility
     name.innerHTML = restaurant.name;
+    name.focus(); // accessibility
 
     const address = document.getElementById('restaurant-address');
     address.innerHTML = restaurant.address;
 
     const image = document.getElementById('restaurant-img');
-    image.className = 'restaurant-img'
+    image.className = 'restaurant-img';
     image.src = DBHelper.imageUrlForRestaurant(restaurant);
+    image.alt = `Image of ${restaurant.name}`; // accessibility
 
     const cuisine = document.getElementById('restaurant-cuisine');
     cuisine.innerHTML = restaurant.cuisine_type;
@@ -128,6 +131,8 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
     const container = document.getElementById('reviews-container');
     const title = document.createElement('h2');
     title.innerHTML = 'Reviews';
+    title.tabIndex = 0; // accessibility
+
     container.appendChild(title);
 
     if (!reviews) {
