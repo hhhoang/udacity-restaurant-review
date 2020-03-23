@@ -1,17 +1,17 @@
 # Restaurant Reviews
 ---
 ## Table of Contents
-*[Project Overview](#projectoverview)
-*[How to Run the Project](#how-to-run-the-project)
-*[Dependencies](#dependencies)
-*[Contributing](#contributing)
+* [Project Overview](#projectoverview)
+* [How to Run the Project](#how-to-run-the-project)
+* [Dependencies](#dependencies)
+* [Contributing](#contributing)
 
 # Project Overview
 
 As part of the Udacity journey, we are assigned the **Restaurant Reviews** projects, in which we have to convert a static webpage to a mobile-ready web application. Further than that the website need to be redesigned to be responsive on different sized displays and accessible for screen reader use. Last but not least, a service worker is added to begin the process of creating a seamless offline experience for the users.
 
 # How to Run the Project
-1. Clone this repository with ``` ``` or simply download the ZIP file.
+1. Clone this repository with ```https://github.com/hhhoang/udacity-restaurant-review.git``` or simply download the ZIP file.
 2. In the root of the folder you have just cloned or downloaded, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer.
     * In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
    * Note -  For Windows systems, Python 3.x is installed as `python` by default. To start a Python 3.x server, you can simply enter `python -m http.server 8000`.
