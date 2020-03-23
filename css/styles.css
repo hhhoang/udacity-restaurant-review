@@ -177,14 +177,11 @@ nav h1 a {
 .filter-options {
     width: 100%;
     height: 50%;
-    background-color: #3397DB;
+    background-color: #f18200;
     align-items: center;
     list-style: outside none none;
     margin: 0;
     padding: 10px 15px 10px;
-    /* grid */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .filter-options h2 {
@@ -196,6 +193,12 @@ nav h1 a {
     padding-top: 5px;
 }
 
+.filter-options div {
+    /* grid */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
 .filter-options select {
     background-color: white;
     border: 1px solid #fff;
@@ -205,7 +208,7 @@ nav h1 a {
     letter-spacing: 0;
     margin: 10px;
     padding: 0 10px;
-    width: 90%;
+    width: 95%;
 }
 
 
@@ -315,6 +318,7 @@ nav h1 a {
     width: 100%;
     height: auto;
     border-radius: 25px 0px 0px;
+    object-fit: cover;
 }
 
 #restaurant-address {
@@ -384,8 +388,9 @@ nav h1 a {
 
 #reviews-list li p:nth-of-type(1) {
     display: inline-block;
+    text-align: justify;
     color: #fff;
-    background-color: #252831;
+    background-color: #333;
     width: 50%;
     margin: 0 0 20px;
     padding: 2px 0;
@@ -395,18 +400,19 @@ nav h1 a {
 #reviews-list li p:nth-of-type(2) {
     display: inline-block;
     color: #fff;
-    float: right;
-    background-color: #252831;
+    text-align: justify;
+    background-color: #333;
     width: 50%;
     margin: 0 0 20px;
     padding: 2px 0;
     font-size: 12pt;
+    font-style: italic;
 }
 
 #reviews-list li p:nth-of-type(3) {
     background-color: orange;
     border-bottom: 3px solid #eee;
-    width: 30%;
+    width: 40%;
     color: #fff;
     font-size: 10pt;
     padding: 5px 10px 5px;
@@ -425,5 +431,18 @@ nav h1 a {
     /* large mobiles and tablets */
     nav h1 a {
         font-size: 17pt;
+    }
+    .filter-options {
+        background-color: #252831;
+    }
+    #restaurant-hours {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #restaurant-address {
+        text-align: center;
+    }
+    #breadcrumb {
+        font-size: 20pt;
     }
 }
