@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <nav aria-label="navigation">
+        <nav>
             <h1><a href="/">Restaurant Reviews</a></h1>
         </nav>
     </header>
@@ -21,7 +21,7 @@
     <main id="maincontent">
         <!-- beginning map -->
         <section id="map-container">
-            <div id="map" tabindex="-1" aria-label="map with restaurants pinpointed"></div>
+            <div id="map" role="application" aria-label="map of restaurant"></div>
         </section>
         <!-- ending map -->
         <section>
@@ -29,10 +29,10 @@
             <div class="filter-options">
                 <h2>Filter Results</h2>
                 <div>
-                    <select id="neighborhoods-select" name="neighborhoods" role="listbox" tabindex="0" aria-label="select a neighborhood" onchange="updateRestaurants()">
+                    <select id="neighborhoods-select" name="neighborhoods" role="listbox" aria-label="select a neighborhood" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
-                    <select id="cuisines-select" name="cuisines" role="listbox" tabindex="0" aria-label="select a type of cuisine" onchange="updateRestaurants()">
+                    <select id="cuisines-select" name="cuisines" role="listbox" aria-label="select a type of cuisine" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
                 </div>

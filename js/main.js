@@ -12,7 +12,7 @@ if (navigator.serviceWorker) {
             console.log(reg, 'Register service worker');
         })
         .catch(function(err) {
-            console.log("cant register sw");
+            console.log("cant register sw", err);
         });
 }
 
@@ -192,7 +192,7 @@ createRestaurantHTML = (restaurant) => {
     const more = document.createElement('a');
     more.innerHTML = 'View Details';
     more.href = DBHelper.urlForRestaurant(restaurant);
-    more.setAttribute('aria-label', `more information about the ${restaurant.name} restaurant`); // accessibility
+    //more.setAttribute('aria-label', `more information about the ${restaurant.name} restaurant`); // accessibility
     li.append(more);
 
     return li

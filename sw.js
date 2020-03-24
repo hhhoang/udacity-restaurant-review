@@ -1,5 +1,5 @@
 // code mainly using from wittr project from Udaicty
-let staticCacheName = 'restaurant-reviews-v1';
+const staticCacheName = 'restaurant-reviews-v1';
 
 
 // service worker install event
